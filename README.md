@@ -1,4 +1,4 @@
-# 💤 Sleep Quality Prediction
+# 💤 Sleep health Analysis and Disorder Prediction
 
 This project analyzes lifestyle and health factors to predict sleep disorders and evaluate their impact on overall sleep quality. Using **Logistic Regression** and **Random Forest** models, it identifies key determinants such as BMI, stress, sleep duration, and physical activity.
 
