@@ -1,13 +1,16 @@
 # 💤 Sleep Health Analysis and Disorder Prediction
 
-This project analyzes lifestyle and health factors to predict sleep disorders and evaluate their impact on overall sleep quality. Using **Logistic Regression** and **Random Forest** models, it identifies key determinants such as BMI, stress, sleep duration, and physical activity.
+This is a **Data Analysis** and **Machine Learning** project that explores lifestyle and health factors to identify key determinants of sleep quality. It applies data preprocessing, exploratory analysis, and classification models (Logistic Regression & Random Forest) to predict sleep disorders and provide actionable insights.
 
 ---
 
 ##  Dataset
 
-The dataset used in this project is sourced from Kaggle:  
-- **Sleep Health and Lifestyle Dataset** — a comprehensive dataset containing information on sleep disorders (None, Insomnia, Sleep Apnea), along with lifestyle metrics and health indicators.  
+The dataset includes features such as:
+Demographics: Age, Gender, Occupation
+Lifestyle Factors: Physical Activity, Sleep Duration, Stress, BMI
+Health Indicators: Blood Pressure, Sleep Disorder (Target Variable)  
+
   Access it here: [Sleep Health and Lifestyle Dataset – Kaggle](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset)
 
 ---
@@ -32,10 +35,17 @@ The dataset used in this project is sourced from Kaggle:
 - Visualized trends across demographics, stress, BMI, sleep duration, and disorders.  
 - Identified strong correlations, particularly involving stress and sleep quality.
 
-### 3. Model Building & Evaluation  
-- **Logistic Regression:** Baseline model with regularization and balanced class weights.  
-- **Random Forest Classifier:** Leveraged for higher accuracy and interpretability.  
+### 3. Model Building 
+- **Logistic Regression:** Used as a baseline model with L2 regularization and balanced class weights. 
+- **Random Forest Classifier:** Used for robust predictions and feature importance analysis.  
 - Evaluated models using precision, recall, F1-score, confusion matrices, and cross-validation.
+
+### 4. Evaluation
+- Evaluated models using:
+  - Precision, Recall,
+  - F1-score
+  - Confusion Matrix
+  - Cross-validation with weighted F1 scoring
 
 ### 4. Feature Importance Analysis  
 - **Random Forest Feature Importance:** Highlighted crucial predictors like stress, sleep duration, and BMI.  
@@ -43,18 +53,19 @@ The dataset used in this project is sourced from Kaggle:
 
 ---
 
-##  Results Summary
+##  Results
 
-- Random Forest outperformed Logistic Regression, achieving higher F1-scores—especially in minority classes.  
-- Key predictors of sleep disorders included **Stress Level**, **Sleep Duration**, **BMI**, and **Blood Pressure**.
+- **Random Forest** Classifier outperformed Logistic Regression, achieving an F1-score of ~94% on the test set.
+- Key features influencing sleep quality: **Stress, BMI, Sleep Duration, Physical Activity.**
+- Visualizations highlighted strong lifestyle-health correlations with sleep disorders.
 
 ---
 
 ##  Conclusion
 
-- Lifestyle variables—stress, sleep duration, BMI—are pivotal in predicting sleep disorders.  
-- The combination of interpretable (Logistic Regression) and robust (Random Forest) models yields both actionable insights and strong predictive performance.
-
+- Lifestyle and health factors such as **BMI, stress,** and **sleep duration** are major determinants of sleep quality.
+- Random Forest demonstrated superior predictive performance compared to Logistic Regression.
+- Proper preprocessing, feature engineering, and importance analysis improved model accuracy and interpretability.
 ---
 
 ##  Tech Stack
@@ -65,13 +76,7 @@ The dataset used in this project is sourced from Kaggle:
 
 ---
 
-##  Future Directions
+👤 Author
 
-- Incorporate wearable or sequential sleep data for richer analysis.  
-- Explore deep learning methods (e.g., LSTMs) for time-series modeling.  
-- Develop an interactive dashboard for real-time sleep disorder risk assessment.
-
----
-
-##  Project Structure
-
+- Bhanu Prabhavi
+- 📧 bhanuprabhavi@gmail.com
